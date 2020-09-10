@@ -5,6 +5,7 @@ Word Occurrences
 
 
 def main():
+    """Get string from user and create dictionary of word to word count"""
     word_count = create_sorted_dictionary()
     longest_word = determine_longest_string(word_count)
     for key, value in word_count.items():
@@ -12,6 +13,7 @@ def main():
 
 
 def create_sorted_dictionary():
+    """Get string from user and count occurrence of each word"""
     word_count = {}
     text = str(input("Text: "))
     words = text.split()
